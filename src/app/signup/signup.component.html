@@ -1,0 +1,31 @@
+<app-home></app-home>
+<div class="container-fluid" >
+  <div class="container" style="width:400px; border-radius: 10px; padding: 30px;">
+    <form [formGroup]="signinForm" (ngSubmit)="userSignin()" >
+      <H3 style="color: #fff;">Register</H3>
+      <label for="name" style="color: white;">Name : </label><br>
+      <input type="text" class="forminput" name="name" placeholder="Enter Name" formControlName="name" style="width:350px; height: 40px; border-radius: 4px;">
+      <br>
+      <span style="color: red;" *ngIf="name && name.invalid && name.touched">This is an invalid input.</span>
+      <br>
+      <label for="company" style="color: white;">Company : </label><br>
+      <input type="text" class="forminput" name="company" placeholder="Enter company" formControlName="company" style="width:350px; height: 40px; border-radius: 4px;">
+      <br>
+      <br>
+      <label for="email" style="color: white;">Email : </label><br>
+      <input type="email" class="forminput" name="email" placeholder="Enter Email" formControlName="email" style="width:350px ; height: 40px; border-radius: 4px;">
+      <br>
+      <span style="color: red;" *ngIf="email && email.invalid && email.touched">This is an invalid input.</span>
+      <br>
+      <label for="password" style="color: white;">Password : </label><br>
+      <input type="password" class="forminput" name="password" placeholder="Enter Password" formControlName="password" style="width:350px ; height: 40px; border-radius: 4px;">
+      <br>
+      <span style="color: red;" *ngIf="password && password.invalid && password.touched">This is an invalid
+        input.</span>
+      <br>
+      <button class="forminput btn btn-success" [disabled]="signinForm.invalid">Start your free trail</button>
+
+    </form>
+
+  </div>
+</div>

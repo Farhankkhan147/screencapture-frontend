@@ -1,0 +1,25 @@
+<app-home></app-home>
+<div class="container-fluid"  style="width:400px; border-radius: 10px; padding: 30px;">
+
+  <div class="container" style="border: black;">
+    <form [formGroup]="loginForm" id="form1" (ngSubmit)="userLogin()" >
+
+      <h3 style="color: #fff;">LOG IN</h3>
+      <input type="email" class="forminput" name="email" placeholder="Enter Email" formControlName="email" style="width:350px; height: 40px; border-radius: 4px;">
+      <br>
+      <span style="color: red;" *ngIf="email && email.invalid && email.touched">This is an invalid input.</span>
+      <br>
+      <input type="password" class="forminput" name="password" placeholder="Enter Password" formControlName="password" style="width:350px; height: 40px; border-radius: 4px;">
+      <br>
+      <span style="color: red;" *ngIf="password && password.invalid && password.touched">This is an invalid
+        input.</span>
+      <br>
+      <button class="forminput btn btn-success" [disabled]="loginForm.invalid">Log In</button>
+      <br>
+    </form>
+
+  </div>
+</div>
+
+
+

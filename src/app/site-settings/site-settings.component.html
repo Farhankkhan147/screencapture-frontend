@@ -1,0 +1,128 @@
+<app-navbar></app-navbar>
+<div class="row">
+    <div class="col-md-3 mx-4 mt-3 mb-3">
+        <app-edit></app-edit>
+    </div>
+    <div class="col-md-9 mt-3 mx-1 mb-3 site-settings">
+        <h6><strong>Site : </strong></h6>
+        <input type="text" style="width: 70% ;">
+        <br><br>
+        <h6><strong>Domain(s) : </strong></h6>
+        <p class="text-muted" style="font-size:14px;">Enter one domain per line. Use * fro wildcards (ie *.mydomain.com)
+        </p>
+        <input type="text" style="width: 70% ; height: 10%;">
+        <br><br>
+        <h6><strong>Who should see PageProofer on your website?</strong></h6>
+        <p>who should see PageProofer on your website?</p>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Only invited PageProofer users
+            </label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; All website visitors can leave
+                feedback</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; No one, disable it</label><br>
+        </div>
+        <br><br>
+        <h6><strong>Allow guests to see their feedback?</strong></h6>
+        <p>Allow guests to see their feedback?</p>
+        <p class="text-muted" style="font-size:14px;">Guests will be able to see their feedback on your website. They
+            will not have dashboard access</p>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Yes</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; No</label><br>
+        </div>
+        <br><br>
+        <h6><strong>Should Client users see other users' notes?</strong></h6>
+        <p>Should Client users see other users notes?</p>
+        <p class="text-muted" style="font-size:14px;">Client users can never see locked notes and comments</p>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Yes</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; No</label><br>
+        </div>
+        <br><br>
+        <h6><strong>Add automatic screenshots to notes and feedback</strong></h6>
+        <p>Add automatic screenshots to notes and feedback</p>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Only guest feedback</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; All notes and guest feedback</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; None</label><br>
+        </div>
+        <br><br>
+        <h6><strong>Which corner of the website do you want to see the PageProofer icon in?</strong></h6>
+        
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Top left</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Top right</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Bottom left</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" mdbInput>
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Bottom right</label><br>
+        </div>
+        <br><br>
+        <h6><strong>Which color do you want the PageProofer button to be on your website?</strong></h6>
+        <p class="text-muted" style="font-size:14px;">If your site has a light background go with dark, if your site has
+            a dark background go with light.</p>
+        <div>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Dark</label><br>
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+            <label class="custom-control-label" for="defaultUnchecked">&nbsp; Light</label><br>
+        </div>
+
+
+        <br><br>
+        <h6><strong>How do you want urls treated when adding notes?</strong></h6>
+        <p class="text-muted" style="font-size:14px;">Unique url's will be treated as separate pages, notes get attached
+            to unique urls/pages.</p>
+        <div class="custom-control custom-radio">
+            <input type="checkbox" mdbInput>
+            <label class="custom-control-label">&nbsp; Treat query string variables as unique urls?</label><br>
+            <input type="checkbox" mdbInput>
+            <label class="custom-control-label">&nbsp; Treat fragment/anchor tags (#) as unique urls?</label><br>
+        </div>
+        <br><br>
+        <h6><strong>Who should notes be assigned to by default?</strong></h6>
+        <select class="form-select" name="default_assignee_id" style="width: 70% ;">
+            <option selected="">No assignee</option>
+            <option>Mohd. Farhan Khan</option>
+        </select>
+        <br><br>
+        <h6><strong>Default Site Url : </strong></h6>
+        <p class="text-muted" style="font-size:14px;">Set a url to link to from the dashboard, activity digest etc.
+            Useful when you have more than one domain defined.</p>
+        <input type="text" style="width: 70% ;">
+
+
+
+        <br><br>
+        <h6><strong>Enabled?</strong></h6>
+        <p class="text-muted" style="font-size:14px;">Disabling a site will prevent it from displaying on a website and turn
+            off the project dashboard.</p>
+        <br>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-danger">Delete</button>&nbsp;
+                <button class="btn btn-success">Update</button>
+            </div>
+            <div class="col-md-2">
+                <p>disabling a site will prevent it from displaying on a website and turn off the project dashboard.</p>
+            </div>
+        </div>
+
+    </div>
+</div>

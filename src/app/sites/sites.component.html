@@ -1,0 +1,53 @@
+
+<app-navbar></app-navbar>
+<br>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <strong style="font-size: 20px;">Sites: </strong> &nbsp;&nbsp;&nbsp;
+        <input class="form-control me-2" type="search" style="width: 190px; border-radius: 10px;"
+            placeholder="Search for a site...." aria-label="Search" (click)="sortNewest()">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Sort by</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" (click)="sortName()">Name</a></li>
+                        <li><a class="dropdown-item" (click)="sortNewest()">Newest</a></li>
+                        <li><a class="dropdown-item" (click)="sortOldest()">Oldest</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Status</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Active</a></li>
+                        <li><a class="dropdown-item" href="#">Favourite</a></li>
+                        <li><a class="dropdown-item" href="#">Disabled</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-success">Add a Site</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<hr>
+<br>
+
+<div *ngFor="let quote of data">
+    <div class="col-lg-3" style="padding-left: 20px;">
+        <div class="card mb-2">
+            <div class="card-body">
+                <a [routerLink]="['dashboard/' + quote.site_id]" class="card-subtitle mb-2" style="color: black;">{{ quote.site_name }}</a>
+                <h6>{{quote.site_id}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
